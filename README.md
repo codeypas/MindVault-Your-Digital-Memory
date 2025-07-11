@@ -14,6 +14,19 @@
 
 ---
 
+## 🖼️ Screenshots
+
+### 📋 Clipboard Tab
+<img src="https://github.com/codeypas/MindVault-Your-Digital-Memory/raw/main/mindvault-extension/ScreenShots/clipboard.png" width="40%" alt="Clipboard Tab" />
+
+### 🌐 Website Tracking (Sites Tab)
+<img src="https://github.com/codeypas/MindVault-Your-Digital-Memory/blob/main/mindvault-extension/ScreenShots/sites.png" width="40%" alt="Sites Tab" />
+
+### 🔍 Search & Filter Feature
+<img src="https://github.com/codeypas/MindVault-Your-Digital-Memory/blob/main/mindvault-extension/ScreenShots/search.png" width="40%" alt="Search Feature" />
+
+---
+
 ## How to Install & Run Locally
 
 ### 1. Clone the Repository
