@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MindVault</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>MindVault</h1>
+      <p>Your Digital Memory</p>
+    </header>
+
+    <div class="controls">
+      <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search..." class="search-input">
+        <input type="date" id="dateFilter" class="date-input">
+      </div>
+      
+      <div class="action-buttons">
+        <!-- <button id="downloadJSON" class="btn btn-primary">📁 JSON</button> -->
+        <button id="downloadTXT" class="btn btn-primary">Download-TXT</button>
+        <button id="clearAll" class="btn btn-danger">Clear</button>
+      </div>
+    </div>
+
+    <nav class="tabs">
+      <button class="tab active" data-tab="clipboard">Clipboard (<span id="clipboardCount">0</span>)</button>
+      <button class="tab" data-tab="websites">Sites (<span id="websiteCount">0</span>)</button>
+    </nav>
+
+    <div class="content">
+      <div id="clipboard-tab" class="tab-content active">
+        <div class="tab-header">
+          <h2>Clipboard History</h2>
+          <button id="clearClipboard" class="btn btn-small">Clear</button>
+        </div>
+        <div id="clipboard-list" class="items-list">
+          <div class="empty-state">
+            <p>No clipboard data yet</p>
+            <small>Copy some text to get started!</small>
+          </div>
+        </div>
+      </div>
+
+      <div id="websites-tab" class="tab-content">
+        <div class="tab-header">
+          <h2>Website History</h2>
+          <button id="clearWebsites" class="btn btn-small">Clear</button>
+        </div>
+        <div id="websites-list" class="items-list">
+          <div class="empty-state">
+            <p>No websites tracked yet</p>
+            <small>Browse some sites to get started!</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
