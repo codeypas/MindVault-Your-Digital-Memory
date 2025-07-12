@@ -16,13 +16,13 @@
     <div class="controls">
       <div class="search-container">
         <input type="text" id="searchInput" placeholder="Search..." class="search-input">
-        <input type="date" id="dateFilter" class="date-input">
+        <input type="date" id="dateFilter" class="date-input" title="Filter by date">
+        <button class="calendar-icon" onclick="document.getElementById('dateFilter').showPicker()"></button>
       </div>
       
       <div class="action-buttons">
-        <!-- <button id="downloadJSON" class="btn btn-primary">📁 JSON</button> -->
-        <button id="downloadTXT" class="btn btn-primary">Download-TXT</button>
-        <button id="clearAll" class="btn btn-danger">Clear</button>
+        <button id="downloadReport" class="btn btn-primary">Download Report</button>
+        <button id="clearAll" class="btn btn-danger">Clear All</button>
       </div>
     </div>
 
@@ -35,7 +35,11 @@
       <div id="clipboard-tab" class="tab-content active">
         <div class="tab-header">
           <h2>Clipboard History</h2>
-          <button id="clearClipboard" class="btn btn-small">Clear</button>
+          <div class="tab-actions">
+            <button id="clipboard-select-btn" class="btn btn-small">Select</button>
+            <button id="clipboard-delete-selected-btn" class="btn btn-small btn-danger hidden">Delete Selected</button>
+            <button id="clearClipboard" class="btn btn-small">Clear</button>
+          </div>
         </div>
         <div id="clipboard-list" class="items-list">
           <div class="empty-state">
@@ -48,7 +52,11 @@
       <div id="websites-tab" class="tab-content">
         <div class="tab-header">
           <h2>Website History</h2>
-          <button id="clearWebsites" class="btn btn-small">Clear</button>
+          <div class="tab-actions">
+            <button id="websites-select-btn" class="btn btn-small">Select</button>
+            <button id="websites-delete-selected-btn" class="btn btn-small btn-danger hidden">Delete Selected</button>
+            <button id="clearWebsites" class="btn btn-small">Clear</button>
+          </div>
         </div>
         <div id="websites-list" class="items-list">
           <div class="empty-state">
